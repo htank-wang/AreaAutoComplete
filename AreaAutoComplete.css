@@ -1,0 +1,47 @@
+/*textarea自动提示组件*/
+.ui-layer-list {
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    position: absolute;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 2px;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.ui-layer-list ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.ui-layer-list ul li {
+    white-space: nowrap;
+    min-width: 50px;
+    _width: 50px;
+    padding: 5px 13px;
+    color: #333;
+    display: block;
+    cursor: pointer;
+}
+
+.ui-layer-list ul li:hover {
+    background-color: #f2f2f5;
+    color: #eb7350;
+}
+
+.ui-layer-list .cur {
+    background-color: #f2f2f5;
+    color: #eb7350;
+}
+
+.ui-layer-list .tt {
+    padding: 5px 10px;
+    display: block;
+    cursor: default;
+    white-space: nowrap;
+    opacity: 0.8;
+}

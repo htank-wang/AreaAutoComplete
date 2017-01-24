@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./AreaAutoComplete.css">
+</head>
+<style>
+    textarea {
+        width: 500px;
+        height: 240px;
+        border: 1px solid #B4C2DC;
+        border-radius: 2px;
+        border-top: 3px solid #1E7BE2;
+        outline: none;
+    }
+
+</style>
+<body>
+
+<h3>textArea自动匹配关键词输入</h3>
+<textarea id="demo1">@关键词1
+</textarea>
+
+
+<script src="./jquery/jquery-1.11.2.js"></script>
+<script src="./AreaAutoComplete.js"></script>
+<script>
+    $(function () {
+        var sources = [
+            {
+                id: "1",
+                text: "关键词1",
+                //是否显示1，0
+                noShow: "1"
+            },
+            {
+                id: "2",
+                text: "关键词2"
+            },
+            {
+                id: "3",
+                text: "关键词3"
+            },
+            {
+                id: "4",
+                text: "关键词4"
+            },
+            {
+                id: "5",
+                text: "关键词5"
+            }
+        ];
+
+        var textArea = new AreaAutoComplete($("#demo1"), {
+            sources: sources
+        })
+    })
+</script>
+</body>
+</html>
